@@ -18,6 +18,7 @@ function init(){
 function getSquare(indice){
     const square = document.createElement('div');
     square.className = 'square';
+    // Metto in evidenza i numeri dei quadrati, se tolto vengono nascosti fino al click
     square.innerHTML = indice;
     square.sqID = indice;
     // Funzione che mi restituirà l'elemento che clicco
