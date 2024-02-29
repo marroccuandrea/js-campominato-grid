@@ -14,8 +14,8 @@
 }
 
 .square{
-    width: 100px;
-    height: 100px;
+    width: 10%;
+    height: 10%;
     background-color: lightblue;
     border: 1px solid white;
     display: flex;
