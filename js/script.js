@@ -2,15 +2,19 @@
 const grid = document.querySelector('.grid');
 const btnStart = document.querySelector('.btn-start');
 
-reset();
+// Funzione reset con il button
+btnStart.addEventListener('click',init);
+
+
 
 // Aggiungo la funzione che genera 100 quadrati
-
+function init(){
+    reset();
     for(let i = 1; i <= 100; i++){
         const square = getSquare(i);
         grid.append(square);
     }
-
+}
 function getSquare(indice){
     const square = document.createElement('div');
     square.className = 'square';
