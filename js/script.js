@@ -20,6 +20,8 @@ function getSquare(indice){
     square.addEventListener('click', function(){
         this.innerHTML = this.sqID;
         console.log(this.sqID);
+        // Al click cambia colore, prendendo la classe creata in precedenza (clicked)
+        this.classList.toggle('clicked');
     })
 
     return square;
