@@ -16,7 +16,11 @@ function getSquare(indice){
     square.className = 'square';
     square.innerHTML = indice;
     square.sqID = indice;
-
+    // Funzione che mi restituirà l'elemento che clicco
+    square.addEventListener('click', function(){
+        this.innerHTML = this.sqID;
+        console.log(this.sqID);
+    })
 
     return square;
 }
